@@ -20,10 +20,11 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 
 # Inherit from cannong device
-$(call inherit-product, device/xiaomi/cannong/device.mk)
+$(call inherit-product, device/xiaomi/cannon/device.mk)
 
-# Inherit some common twrp stuff.
-$(call inherit-product, vendor/twrp/config/common.mk)
+# Inherit common product files.
+$(call inherit-product, vendor/pb/config/common.mk)
+
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := cannon
